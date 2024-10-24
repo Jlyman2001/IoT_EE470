@@ -21,8 +21,8 @@ DHTNEW Sensor(TEMPERATURE_HUMIDITY_SENSOR);
 //define constant values needed for operation such
 //as the WiFi AP name and password
 //as well as the URLs needed to query
-const char* ssid = "Lyman Family";
-const char* password = "7072178282";
+const char* ssid = "CRCiPhone";
+const char* password = "kgtwc8qlttkr";
 
 String baseURL = "https://josh-lyman-ssu.com/Database-Assignment/insert_data.php";
 String timeURL = "https://timeapi.io/api/Time/current/zone?timeZone=";
@@ -39,7 +39,6 @@ double captureTemp();
 double captureHumidity();
 void uploadData(String timestamp, double temperature, double humidity);
 String MygetTime();
-
 
 void connectToWiFi()
 {
