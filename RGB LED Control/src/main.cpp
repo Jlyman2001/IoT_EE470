@@ -11,7 +11,7 @@
 #define Red_LED_Output D1
 #define Green_LED_Output D2
 #define Blue_LED_Output D3
-#define Single_LED_Output D4
+#define Single_LED_Output D5
 
 
 int Red_Duty_Cycle = 0;
@@ -26,8 +26,8 @@ unsigned long startMillis;
 const unsigned long period = 300000;
 
 // WiFi settings
-const char *ssid = "Lyman Family";
-const char *password = "7072178282";
+const char *ssid = "farid";
+const char *password = "test2023";
 const String PATH_TO_SETTINGS_FILE = "https://josh-lyman-ssu.com/RGB-LED-Assignment/results.txt";
 
 // put function declarations here:

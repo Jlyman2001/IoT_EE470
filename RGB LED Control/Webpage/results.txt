@@ -1,0 +1,6 @@
+{
+    "Red": 0,
+    "Green": 255,
+    "Blue": 255,
+    "LED": false
+}

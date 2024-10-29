@@ -228,9 +228,9 @@ String MygetTime()
     client.setInsecure();
     HTTPClient https;
 
-    timeURL = timeURL + timezoneStr;
+    String timeURLQuery = timeURL + timezoneStr;
 
-    if (https.begin(client,timeURL))
+    if (https.begin(client,timeURLQuery))
     {
         int httpCode = https.GET();
         if (httpCode == HTTP_CODE_OK)
@@ -250,7 +250,7 @@ String MygetTime()
             client.abort();
 
             //retry connection
-            if (https.begin(client,timeURL))
+            if (https.begin(client,timeURLQuery))
             {
                 int httpCode = https.GET();
                 if (httpCode == HTTP_CODE_OK)
